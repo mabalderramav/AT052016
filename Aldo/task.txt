@@ -1,0 +1,12 @@
+1.-What is ruby?
+ruby is an object-oriented language with a natural syntax.
+
+2.-what pros/cons you considered from the point explained in the class?
+pros
+* it is one of the most popular languages of the medium
+cons
+* It tends not to be maintainable code throughout the software life
+3.-According what we talked today, what are the 3 testing tiers?
+* GUI
+*API Services
+*Back end

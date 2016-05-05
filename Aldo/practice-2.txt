@@ -1,0 +1,18 @@
+a) The way to add comments on ruby (inline – multiline)
+	Single-line.- it used to add quick comments, or trivial information that is standing in that line or lines of code.
+	Multi-line.- it is used to document code more formal way
+b) When you should use each type.-
+	Single-line.-when you want to add a quick comment of what made the code.
+	Example.-
+		String Name #Firts name of the person
+	Multi-line.- it used for documentation in the code
+	=begin
+	base class for the different roles that can have 
+	a class in the system
+	=end
+	class Person
+		#Code
+	end
+c) the script is in the file practice2.rb
+	
+
