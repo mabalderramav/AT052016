@@ -7,7 +7,12 @@
 class Customer
 	attr_reader :customer_id, :name
 	def setCustomer_idAndName customer_id, name
+		@customer_id = customer_id.to_i
+		@name = "Hi " + name.to_s
 		puts customer_id>100 ? "Thanks to be our customer".upcase : "Thanks".downcase
 	end
 end
-Customer.new.setCustomer_idAndName 101,"aldo"
+custumer = Customer.new
+custumer.setCustomer_idAndName 101,"aldo"
+puts custumer.name.upcase
+puts "Your are our cutomer #{custumer.customer_id} " + (custumer.customer_id>100 ? "Thanks to be our customer".upcase : "Thanks".downcase)
