@@ -2,16 +2,16 @@ def method_block
 
 	##some code
 
-	result = 5
+	result = 0
 
-	yield
+	yield result
 
 	puts "The value obtained is #{result}"
 end
 
-method_block {puts result = 15 *25}
+method_block {|result| puts result = result *25}
 
-method_block do
+method_block do |result|
 
 	result = result==0? 25+15:25*5
 	puts result
