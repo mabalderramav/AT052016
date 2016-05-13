@@ -24,9 +24,7 @@ module RubyArrays
 		return v1,v2,v3
 	end
 	def RubyArrays.getThreeArrays v1,v2,v3
-		p v1
-		p v2
-		p v3
+		return v1,v2,v3
 	end
 	def RubyArrays.unionTwoArray myArray1,myArray2
 		puts myArray1 & myArray2

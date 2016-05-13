@@ -6,7 +6,7 @@ handling all forms of arrays
 require_relative "library/RubyArrays"
 #Method one
 v1, v2, v3 = RubyArrays.setThreeArrays
-RubyArrays.getThreeArrays v1,v2,v3
+p RubyArrays.getThreeArrays v1,v2,v3
 #Method two
 RubyArrays.unionTwoArray v1,v3
 #Method three
