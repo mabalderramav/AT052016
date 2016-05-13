@@ -10,6 +10,7 @@ end
 print getArray
 puts ""
 puts getArray
+p getArray
 
 def getFirstArray
 	getArray.first
