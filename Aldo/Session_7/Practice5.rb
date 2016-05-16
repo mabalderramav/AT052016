@@ -12,13 +12,14 @@ class HashClass
 				print "Enter to #{value} keys : "
 				key = gets.chomp
 				isrepeat = myHash.has_key? key
-				#puts "repeat key" if isrepeat end
+				puts "repeat key" if isrepeat
 			end
 			isrepeat = true
 			while isrepeat
-				print "Enter to #{value} names : "
+				print "Enter to #{value} name : "
 				name = gets.chomp
 				isrepeat = myHash.has_value? name
+				puts "repeat name" if isrepeat
 			end
 			@myHash.store key,name
 		end
