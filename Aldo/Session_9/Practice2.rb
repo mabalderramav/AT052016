@@ -38,6 +38,7 @@ end
 myProducts = Products.instance
 option = 0
 while option != 4
+	system "cls"
 	puts "clothing for sale"
 	puts "1.- Pantalon a #{myProducts.getHashPrice 1} bs, stock #{myProducts.getHashStock 1}"
 	puts "2.- Polera a #{myProducts.getHashPrice 2} bs, stock #{myProducts.getHashStock 2}"
