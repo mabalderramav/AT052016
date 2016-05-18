@@ -9,7 +9,7 @@ class SetPerson
 		@myHash.store person.userId, person.name
 	end
 	def getUserIdInNumber number
-		@myHash.select { |userId,name| userId if /1/ =~ userId.to_s  }
+		@myHash.select { |userId,name| userId if /#{number}/ =~ userId.to_s  }
 	end
 	def getNameOfOneChar myChar
 		@myHash.select { |userId,name| name if /^#{myChar}/ =~ name}
