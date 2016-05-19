@@ -1,0 +1,3 @@
+|optin insert a||minutes 120.0||hours Conversion 2.0|
+|optin insert b||hours 48.0||days Conversion 2.0|
+|optin insert c||days 60.0||month Conversion 2.0|
