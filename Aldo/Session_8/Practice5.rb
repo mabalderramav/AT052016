@@ -1,4 +1,6 @@
+require "singleton"
 class Person
+	include Singleton
 	attr_accessor :userId,:name
 end
 class SetPerson
@@ -22,7 +24,7 @@ mySetPerson = SetPerson.new
 print "Enter to counter of person : "
 count = gets.chomp.to_i
 count.times do |value|
-	person = Person.new
+	person = Person.instance
 	userId = 0
 	while userId < 1 || userId > 100
 		print "Enter to userId : "
