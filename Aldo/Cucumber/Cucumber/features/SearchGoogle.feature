@@ -8,7 +8,7 @@ Scenario: Succesfull Search
 
 Scenario: special characters
 	Then enter special characteres such as 'P@$$w0rd'
-	When the result should not show me results
+	Given the result should not show me results
 
 Scenario: Write incoherently
 	Then enter the following words asdfasdfasdfasdf
