@@ -3,25 +3,17 @@ Given(/^I day tasks$/) do |table|
 end
 
 When(/^task (in progress|completed) (fundamentals|prog01|english)$/) do |status,matter|
-  case matter
-    when "fundamentals" then 
-        if status.eql?("completed")
-            @board[1][2] = "done"
-        else
-            @board[1][2] = "inprogress"
-        end
-    when "prog01" then 
-        if status.eql?("completed")
-            @board[2][2] = "done"
-        else
-            @board[2][2] = "inprogress"
-        end
-    when "english" then 
-        if status.eql?("completed")
-            @board[3][2] = "done"
-        else
-            @board[3][2] = "inprogress"
-        end
+  myArray = @board
+  myArray.each_with_index do |otherArray,row|
+     otherArray.each do |value|
+          if value.eql?(matter)
+            if status.eql?("completed")
+                @board[row][2] = "done"
+            else
+                @board[row][2] = "inprogress"
+            end
+          end
+      end
   end
 end
 
