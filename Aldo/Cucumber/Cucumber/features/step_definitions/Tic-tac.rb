@@ -4,9 +4,13 @@ Given(/^a board like this:$/) do |table|
   @board = table.raw
 end
 
-When(/^player x plays in row (\d+), column (\d+)$/) do |row, col|
+When(/^player (x|y) plays in row (\d+), column (\d+)$/) do |value,row, col|
 	row, col = row.to_i,col.to_i
-	@board[row][col] = "x"
+  if value.eql?("x")
+    @board[row][col] = "x"
+  else
+    @board[row][col] = "0"
+  end
 	puts @board
   #pending # Write code here that turns the phrase above into concrete actions
 end
