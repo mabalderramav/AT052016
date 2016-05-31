@@ -1,3 +1,8 @@
+=begin
+	
+rescue Exception => e
+	
+=end
 require "singleton"
 class Person
 	include Singleton
