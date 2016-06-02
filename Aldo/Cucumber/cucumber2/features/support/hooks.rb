@@ -1,4 +1,4 @@
-Before('@smoke') do |scenario|
+Before('@smoke','@regression') do |scenario|
 	puts "Entrando al setup"
 	puts $app_user
 	puts $app_host
